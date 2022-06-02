@@ -1,0 +1,17 @@
+{
+  "channels": [
+    {
+      "channel_id": 1,
+      "channel_name": "Channel Title here",
+      "channel_description": "channel description here",
+      "channel_type": "private"
+    },
+
+    {
+      "channel_id": 2,
+      "channel_name": "Channel 2 Title here",
+      "channel_description": "channel 2 description here",
+      "channel_type": "private"
+    }
+  ]
+}

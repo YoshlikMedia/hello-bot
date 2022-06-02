@@ -1,0 +1,15 @@
+{
+  "districts": [
+    {
+      "state_id": 1,
+      "district_id": 3,
+      "district_name": "Musafah"
+    },
+
+    {
+      "state_id": 2,
+      "district_id": 4,
+      "district_name": "Jumaira"
+    }
+  ]
+}
