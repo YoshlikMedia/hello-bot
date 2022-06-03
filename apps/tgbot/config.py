@@ -45,10 +45,10 @@ def load_config(path: str = None):
             webhook_url=env.str("WEBHOOK_URL", default=""),
         ),
         db=DbConfig(
-            host=env.str('DB_HOST'),
-            password=env.str('DB_PASS'),
-            user=env.str('DB_USER'),
-            database=env.str('DB_NAME')
+            host=env.str('DB_HOST', default='localhost'),
+            password=env.str('DB_PASS', default=''),
+            user=env.str('DB_USER', default='root'),
+            database=env.str('DB_NAME', default='tgbot'),
         ),
         misc=Miscellaneous()
     )
