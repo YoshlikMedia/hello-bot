@@ -25,6 +25,20 @@ services:
       - "8000:8000"
     command: /start
 
+  aiogram:
+    build:
+      context: .
+      dockerfile: ./compose/local/aiogram/Dockerfile
+    image: image: aiogram/telegram-bot-api:latest
+    container_name: bot_template_project_local_aiogram
+    platform: linux/x86_64
+    restart: on-failure
+    depends_on:
+      - postgres
+    env_file:
+      - ./.envs/.local/.aiogram
+    command: python ./apps/bot/aiogram_inline_keyboard_bot.py    
+
   postgres:
     build:
       context: .
